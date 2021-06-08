@@ -1,0 +1,199 @@
+Application Programming Interface
+
+API === Waiter
+Kitchen === Server
+Client
+
+Hides the server beneath an interface layer
+Sets the rules of interaction between front and back ends of an application, improving security
+
+https://jsonplaceholder.typicode.com/posts
+
+
+ODM
+Object Document Mapper
+- a tool para ma-connect ang express.js API kay mongoDB
+GUI ni mongoDB si Robo3T
+
+Mongoose (a type of ODM specially made for MongoDB)
+An ODM library that manages data relationships,validates schemas, and simplifies MongoDB document manipulation via the use of models.
+
+Schemas
+Schema is a representation of a document's structure. It also contains a document's expected properties and data types.
+Blueprint ng document ng isang collection.
+
+Models 
+Programming interface for querying or manipulating database. A mongoose model contains methods that simplify such operations.
+
+npm init -y
+npm install express nodemon mongoose
+update text script and dev script
+npm start
+npm run dev
+npx kill-port <port>
+npm install bcrypt
+
+for hash ng password
+
+npm install jsonwebtoken
+
+"email": "exo101@gmail.com",
+"password": "chanbaek1425",
+
+Minimum Viable Product is a product that has enough features to be useful to its target market. It is used to validate a product idea at the onset of development.
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYjViZGUyMGIyYzZmMTYzNDc1NTE5ZSIsImVtYWlsIjoiZXhvMTAxQGdtYWlsLmNvbSIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE2MjI2MDI0MDh9.intWcf5nhvni69V-XPlEaY1-WGsQgaycTRNq3yVevQ4
+
+  "firstName": "Byun",
+    "lastName": "Baek",
+    "email": "exo1014@gmail.com",
+    "confirmPassword": "byunbaek123",
+    "password": "byunbaek123",
+    "mobileNo": "09297882085"
+
+}
+
+Chanyeol
+{
+   "email": "exo101@gmail.com",
+    "password": "chanbaek1425"
+}
+
+heroku
+heroku login
+
+new bash
+heroku create
+git remote-v
+
+npm install cors
+
+https://floating-temple-94349.herokuapp.com/ | https://git.heroku.com/floating-temple-94349.git
+
+
+/*Create a model with following fields.
+  chapter, Number,
+  chapterDescription, String
+  questionId, Number
+  question, String
+  correct_answer, string
+  incorrect_answers, array of strings,
+  isActive, true by default
+  */
+
+Create a route and controller, so we can display all questions available on our Question model / questions collections.
+GET method.
+quiz.js
+
+import the quiz routes to your main file with endpoint /api/quiz
+
+
+		Question.find()
+		.then(findQuestions => {
+			res.send(findQuestions)
+		})
+		.catch(error => {
+			res.send(error)
+		})
+CAPSTONE 2 Requirements
+1 User Registration - done
+2 User Authentication - done
+3 Set user as Admin (Admin Only
+    only an admin can set another user as an admin - done
+4 Retrieve all active products - all user - done
+5 Retrieve single product - all user - done
+6 Create product - Admin - done
+7 Update product - Admin - done
+8 Archive product - Admin 
+9 Non admin user checkout (Create 
+10 Retrieve authenticated user's orders
+11 Retrieve all orders (Admin only)
+
+Data model
+User
+Email string
+password string
+isAdmin boolean default to false
+
+Product
+Name string
+Description string
+Price number
+isActive defaults to true
+createdOn 
+
+
+sa order dapat nakakapag-add nalang ng user ID (without params)
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYjViZGUyMGIyYzZmMTYzNDc1NTE5ZSIsImVtYWlsIjoiZXhvMTAxQGdtYWlsLmNvbSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTYyMjYxNTk5OX0.CXxqN_jH4M1RqC7xZ78tI8VFLtM0ViWRtv-7N281KwQ
+
+{
+    "firstName": "Gisell",
+    "lastName": "Moros",
+    "email": "newUser1@gmail.com",
+    "password": "testonly1",
+    "mobileNo": "09297882085"
+
+}
+
+{
+    "firstName": "Kyungsoo",
+    "lastName": "Do",
+    "email": "newUser2@gmail.com",
+    "password": "testonly2",
+    "mobileNo": "09297882085"
+
+}
+
+Steps for Enroll function/method:
+1. Find the details of the user who wants to enroll.
+2. Push the request body which contains our courseId that the user wants to enroll in. We saved the foundUser document.
+3. Find the details of the course we want to enroll in by using findById and passing the courseId from our request body.
+4. Push the new enrollee/user into the enrollees subdocument array of our course
+
+https://floating-temple-94349.herokuapp.com/ | 
+https://git.heroku.com/floating-temple-94349.git
+
+
+Gift set
+
+sana huwag mong iparamdam na bitawan kita
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
